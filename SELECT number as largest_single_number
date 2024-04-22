@@ -1,0 +1,33 @@
+SELECT number as largest_single_number
+FROM Numbers
+GROUP BY number
+HAVING count(number) < 2
+ORDER BY number DESC
+LIMIT 1;
+
+/*
+Challenge:
+Largest Non-Repeating Number
+Medium
+Problem Description
+Consider the following table:
+
+Table - Numbers
+
+number
+8
+8
+3
+3
+1
+4
+5
+6
+Task: Write an SQL query to fetch the largest non-repeating number. If there is no such number, fetch NULL.
+
+Expected Result
+
+largest_single_number
+6
+
+*/
